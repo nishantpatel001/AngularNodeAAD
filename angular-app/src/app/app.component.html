@@ -1,0 +1,16 @@
+<mat-toolbar color="primary">
+  <a class="title" [routerLink]="['/']">{{ title }}</a>
+
+  <div class="toolbar-spacer"></div>
+  <button mat-raised-button *ngIf="!loginDisplay" (click)="login()">Login</button>
+  <button mat-raised-button *ngIf="loginDisplay" color="warn" (click)="logout()">Logout</button>
+</mat-toolbar>
+
+<h2 *ngIf="isAuthorized" style="text-align: center;">You are authorized</h2>
+<h2 *ngIf="!isAuthorized" style="text-align: center;">You are unauthorized</h2>
+
+<div class="container">
+  <!--This is to avoid reload during acquireTokenSilent() because of hidden iframe -->
+  <router-outlet *ngIf="!isIframe"></router-outlet>
+</div>
+
