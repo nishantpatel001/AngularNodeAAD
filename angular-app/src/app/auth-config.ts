@@ -18,7 +18,7 @@ export const msalConfig: Configuration = {
     // API client id: e0fa75b3-4383-456c-9b66-581cac815f1f
     // APP client id: b77cd122-9f25-4932-a1cb-1ed5772f4a37
     auth: {
-        clientId: 'b77cd122-9f25-4932-a1cb-1ed5772f4a37', // This is the ONLY mandatory field that you need to supply.
+        clientId: '72cc9c3a-67a0-45ed-b23a-939f713b7061', // This is the ONLY mandatory field that you need to supply.
         authority: 'https://login.microsoftonline.com/organizations', // Defaults to "https://login.microsoftonline.com/common"
         redirectUri: '/', // Points to window.location.origin. You must register this URI on Azure portal/App Registration.
     },
@@ -48,7 +48,7 @@ export const protectedResources = {
     },
     todoListApi: {
         endpoint: "https://app-aad-node.azurewebsites.net/api",
-        scopes: ["api://e0fa75b3-4383-456c-9b66-581cac815f1f/.default"],
+        scopes: ["api://075b1383-a53b-47f1-b52f-80d2f9107b64/.default"],
     },
 }
 

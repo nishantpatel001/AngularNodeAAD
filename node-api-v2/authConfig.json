@@ -1,7 +1,7 @@
 {
     "credentials": {
         "tenantID": "organizations",
-        "clientID": "e0fa75b3-4383-456c-9b66-581cac815f1f"
+        "clientID": "075b1383-a53b-47f1-b52f-80d2f9107b64"
     },
     "metadata": {
         "authority": "login.microsoftonline.com",
@@ -17,7 +17,7 @@
         "todolist": {
             "endpoint": "/api",
             "scopes": [
-                "access_as_user"
+                "access_from_angular"
             ]
         }
     },
